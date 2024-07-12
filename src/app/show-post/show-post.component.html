@@ -1,0 +1,8 @@
+<h1>All Books</h1>
+<ul>
+    <li *ngFor="let post of allPost"> 
+        TITLE : {{post.title}} || AUTHOR : {{post.author}}
+        <button [routerLink]="['/detail',post.id]" >Details</button>
+        <button  >Delete</button>
+    </li>
+</ul>
